@@ -1,9 +1,10 @@
 
-<h2>Title:</h2>
-<span><%= @book.title %></span>
+<p><strong>Title:</strong>
+<span><%= @book.title %></span></p>
 
-<h2>Body:</h2>
-<span><%= @book.body %></span>
+<p><strong>Body:</strong>
+<span><%= @book.body %></span></p>
 
- <%= link_to 'Edit',edit_book_path(@book.id) %>
- <%= link_to 'Back','/books' %>
+ <a><%= link_to 'Edit',edit_book_path(@book.id) %></a>
+ <span>|</span>
+ <a><%= link_to 'Back','/books' %></a>
