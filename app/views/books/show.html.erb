@@ -5,6 +5,8 @@
 <p><strong>Body:</strong>
 <span><%= @book.body %></span></p>
 
- <a><%= link_to 'Edit',edit_book_path(@book.id) %></a>
- <span>|</span>
- <a><%= link_to 'Back','/books' %></a>
+ <%= link_to 'Edit',edit_book_path(@book.id) %>
+ |
+ <%= link_to 'Back','/books' %>
+ 
+ 
